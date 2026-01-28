@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing to Mastering: Relational Data Architecture Principles and Patterns - ₹599</title>
+    <meta name="description"
+        content="Comprehensive guide to relational data architecture from foundational principles to advanced patterns. Special offer: ₹599 (25% off from ₹799)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="book-page.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <img src="logo.png" alt="Scientific Research Publications Logo" class="logo">
+            <h1 class="publisher">Scientific Research Publications</h1>
+            <!-- Theme switcher removed per user request (Blue theme only) -->
+            <!-- Cart removed on user request -->
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Two Column Layout: Image Left, Details Right -->
+            <div class="book-hero-container">
+                <!-- Left Column: Book Image -->
+                <section class="book-hero">
+                    <img src="book.png" alt="Book Cover - Designing to Mastering: Relational Data Architecture Principles and Patterns" class="book-cover" id="bookCover">
+                </section>
+
+                <!-- Right Column: Book Details -->
+                <div class="book-details-column">
+                    <!-- Book Title & Basic Info -->
+                    <section class="book-info">
+                        <h1 class="title">Data Warehouse of Knowledge: 
+Mining Data for Intelligence</h1>
+                        <div class="meta">
+                            <span class="authors">
+                                <span id="firstAuthor">Mrs.K.S.Hemalatha</span><span id="moreAuthors"
+                                    style="display: none;"> • Mrs.D.Gopika • Mrs.K.Nithyadevi • Mrs.P.Lakshmi Priya</span>
+                                <a href="#" class="read-more-link" id="readMoreAuthors">+3 more</a>
+                            </span>
+                            <span class="isbn">ISBN: <span id="isbnValue">979-8-20-839577-6</span></span>
+                            <span class="price">₹599 <del>₹799</del> <span class="discount">25% OFF</span></span>
+                        </div>
+                    </section>
+
+                    <!-- Action Buttons -->
+                    <section class="action-bar">
+                        <button class="action-btn secondary" id="sampleBtn" aria-label="Read sample pages"
+                            title="Read sample pages">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                            </svg>
+                            Read Sample (First 25 Pages)
+                        </button>
+                        <button class="action-btn primary" id="buyBtn" aria-label="Buy via WhatsApp"
+                            title="Buy now via WhatsApp">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Buy Now - ₹599
+                        </button>
+                    </section>
+
+                    <!-- Quick Details -->
+                    <section class="quick-details">
+                        <div class="detail-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            <span>Paperback</span>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                            </svg>
+                            <span>194 Pages</span>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>2025 Edition</span>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            <span>English</span>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Tabs Navigation -->
+            <nav class="tabs" role="tablist" aria-label="Book information tabs">
+                <button class="tab active" role="tab" aria-selected="true" aria-controls="overview" id="tab-overview"
+                    data-tab="overview" tabindex="0">Overview</button>
+                <button class="tab" role="tab" aria-selected="false" aria-controls="authors" id="tab-authors"
+                    data-tab="authors" tabindex="-1">Authors</button>
+                <button class="tab" role="tab" aria-selected="false" aria-controls="contents" id="tab-contents"
+                    data-tab="contents" tabindex="-1">Contents</button>
+                <button class="tab" role="tab" aria-selected="false" aria-controls="details" id="tab-details"
+                    data-tab="details" tabindex="-1">Full Details</button>
+            </nav>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Overview Tab -->
+                <div class="tab-panel active" role="tabpanel" id="overview" aria-labelledby="tab-overview"
+                    aria-hidden="false">
+                    <h2>Book Overview</h2>
+                    <p>This book provides a structured and comprehensive introduction to the 
+fundamental concepts, techniques, and applications of data mining.
+introduces the basic data mining tasks, distinguishes data mining from 
+knowledge discovery in databases (KDD), and discusses key issues, metrics, 
+social implications, and database perspectives. This foundation helps learners 
+understand the scope and relevance of data mining in real-world scenarios. focuses on core data mining techniques, covering statistical perspectives, 
+similarity measures, decision trees, neural networks, and genetic algorithms. 
+These techniques form the backbone of modern data mining systems and are 
+essential for practical implementation. </p>
+
+                    <div class="highlight-box">
+                        <h3>What Makes This Book Special</h3>
+                        <ul>
+                            <li>Data mining has emerged as an essential discipline in the modern 
+data-driven world, enabling the extraction of meaningful knowledge from large 
+and complex datasets.</li>
+                            <li>data mining tasks, issues, and metrics, followed by 
+detailed discussions on statistical methods, similarity measures, decision trees, 
+neural networks, genetic algorithms, classification, clustering, and association 
+rule mining. </li>
+                            <li>Knowledge Discovery in Databases, or KDD, is a more encompassing 
+process that includes data cleaning, integration, selection, transformation, 
+mining, and interpretation.  </li>
+                            <li>The broad characteristics of the data in the database are handled by the 
+descriptive function</li>
+                        </ul>
+                    </div>
+
+                    <h3>Who This Book Is For</h3>
+                    <div class="audience-grid">
+                        <div class="audience-card">
+                            <h4>Aspiring Data Engineers</h4>
+                            <p>Building solid foundations in relational data architecture</p>
+                        </div>
+                        <div class="audience-card">
+                            <h4>Database Architects</h4>
+                            <p>Experienced professionals seeking to master advanced patterns</p>
+                        </div>
+                        <div class="audience-card">
+                            <h4>Software Professionals</h4>
+                            <p>Seeking clarity amidst the complexities of evolving technologies</p>
+                        </div>
+                    </div>
+
+                    <h3>Key Topics Covered</h3>
+                    <div class="topics">
+                        <span class="topic-tag">Data Mining Tasks</span>
+                        <span class="topic-tag">Data Mining Issues</span>
+                        <span class="topic-tag">Data Mining Techniques</span>
+                        <span class="topic-tag">Similarity Measures</span>
+                        <span class="topic-tag">Statistical Based Algorithms</span>
+                        <span class="topic-tag">Neural Network Based Algorithms</span>
+                        <span class="topic-tag">Similarity and Distance Measures</span>
+                        <span class="topic-tag">Hierarchical Algorithms</span>
+                        <span class="topic-tag">Large Item Sets</span>
+                        <span class="topic-tag">Parallel & Distributed</span>
+                    </div>
+                </div>
+
+                <!-- Authors Tab -->
+                <div class="tab-panel" role="tabpanel" id="authors" aria-labelledby="tab-authors" aria-hidden="true">
+                    <h2>About the Authors</h2>
+
+                    <div class="author-profile">
+                        <div class="author-header">
+                            <div class="author-avatar">KS</div>
+                            <div>
+                                <h3>Mrs.K.S.Hemalatha</h3>
+                                <p class="author-designation">Assistant professor in Department of Computer Science at Shri 
+Nehru Maha Vidyalaya College of arts and Science</p>
+                            </div>
+                        </div>
+                        <p>Assistant professor in Department of Computer Science at Shri 
+Nehru Maha Vidyalaya College of arts and Science, 
+Coimbatore. With 3 years of experience in the field,she has 
+consistently demonstrated a commitment to excellence in 
+teaching, student development and subject matter expertise. 
+Her area of interest include Data Mining, Data Science and 
+Machine Learning.She actively involved in both curricular and 
+co curricular activities aimed at Multidimensional student 
+devlopment </p>
+                        <div class="achievements">
+                            <span>📚 Years of Teaching Experience</span>
+                            <span>🔬 Data Mining</span>
+                            <span>💡 Data Science and Machine Learning</span>
+                            <span>🎓 Student Mentorship</span>
+                        </div>
+                    </div>
+
+                    <div class="author-profile">
+                        <div class="author-header">
+                            <div class="author-avatar">DG</div>
+                            <div>
+                                <h3>Mrs.D.Gopika </h3>
+                                <p class="author-designation">Assistant Professor, Department of Computer Science at Shri 
+Nehru Maha Vidyalaya College of Arts and Science, 
+Coimbatore</p>
+                            </div>
+                        </div>
+                        <p>Assistant Professor, Department of Computer Science at Shri Nehru Maha Vidyalaya College of Arts and Science, Coimbatore. She has several years of experience in undergraduate teaching. Her areas of academic interest include Data Mining, Machine Learning, and Database Systems. She has guided numerous student projects and actively participates in academic and research activities. Her teaching approach emphasizes conceptual clarity, practical understanding, and student-centered learning.</p>
+                        <div class="achievements">
+                            <span>📖 several Years Teaching Experience</span>
+                            <span>🏭 Data Mining, Machine Learning, and Database Systems</span>
+                            <span>📄 actively participates in academic and research activities</span>
+                            
+                        </div>
+                    </div>
+
+                    <div class="author-profile">
+                        <div class="author-header">
+                            <div class="author-avatar">KN</div>
+                            <div>
+                                <h3>Mrs.K.Nithyadevi</h3>
+                                <p class="author-designation">Assistant Professor in Department of Information Technology at Shri Nehru maha vidyalaya college of arts and science, Coimbatore</p>
+                            </div>
+                        </div>
+                        <p>Assistant Professor in Department of Information Technology at Shri Nehru maha vidyalaya college of arts and science, Coimbatore . She has a strong background in Computer Networks with several years of teaching experience at college level.she worked closely with students to address common learning challenges and a passion for presenting concept in a clear structural and student friendly manner and she committed to supporting learners through well organized and application oriented study material</p>
+                        <div class="achievements">
+                            <span>📚 several Years Teaching Experience</span>
+                            <span>📄 strong background in Computer Networks</span>
+                            <span>📝 challenges and a passion for presenting concept in a clear structural</span>
+                            <span>📖 organized and application oriented study material</span>
+                        </div>
+                    </div>
+
+                    <div class="author-profile">
+                        <div class="author-header">
+                            <div class="author-avatar">PL</div>
+                            <div>
+                                <h3>Mrs.P.Lakshmi Priya</h3>
+                                <p class="author-designation">Assistant Professor in Department of Computer Technology at Shri Nehru Maha Vidyalaya College of Arts and Science, Coimbatore</p>
+                            </div>
+                        </div>
+                        <p>Assistant Professor in Department of Computer Technology at Shri Nehru Maha Vidyalaya College of Arts and Science, Coimbatore. Passionate over the field of Computer Science made her to choose an irrepressible profession based on the same. She has a resilient background in Computer Networks and Data Structures with nearly 18 years of teaching experience at college level. She stanched to care the upcoming buds through a structured and application oriented study material. Encouraged the students in a friendly approach and reinforced them with her stretched knowledge to impart the concepts and principles in a well understanding way.</p>
+                        <div class="achievements">
+                            <span>📚 18+ years of Teaching experience</span>
+                            <span>📄 Structured and application oriented study material</span>
+                            <span>🔬 Background in Computer Networks and Data Structures</span>
+                            <span>🎓 knowledge to impart the concepts and principles in a well understanding way</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contents Tab -->
+                <div class="tab-panel" role="tabpanel" id="contents" aria-labelledby="tab-contents" aria-hidden="true">
+                    <h2>Table of Contents</h2>
+
+                    <div class="chapter">
+                        <h3>Chapter 1: Basic Data Mining Task</h3>
+                        <ul>
+                            <li>Basic Data Mining Tasks</li>
+                            <li>Data Mining Versus Knowledge Discovery in Data Bases</li>
+                            <li>Data Mining Issues</li>
+                            <li>Data Mining Matrices</li>
+                            <li>Social Implications of Data Mining</li>
+                            <li>Data Mining from Database Perspective</li>
+                        </ul>
+                    </div>
+
+                    <div class="chapter">
+                        <h3>Chapter 2: Data Mining Techniques</h3>
+                        <ul>
+                            <li>Data Mining Techniques</li>
+                            <li>Statistical Perspective on data mining</li>
+                            <li>Similarity Measures</li>
+                            <li>Decision Trees</li>
+                            <li>Neural Networks</li>
+                            <li>Genetic Algorithms</li>
+                        </ul>
+                    </div>
+
+                    <div class="chapter">
+                        <h3>Chapter 3:  Classification</h3>
+                        <ul>
+                            <li>Introduction</li>
+                            <li>Statistical Based Algorithms</li>
+                            <li>Distance Based Algorithms</li>
+                            <li>Decision Tree Based Algorithms</li>
+                            <li>Neural Network Based Algorithms</li>
+                            <li>Rule Based Algorithms</li>
+                            <li>Combining Techniques</li>
+                        </ul>
+                    </div>
+
+                    <div class="chapter">
+                        <h3>Chapter 4: Clustering</h3>
+                        <ul>
+                            <li> Introduction</li>
+                            <li>Similarity and Distance Measures</li>
+                            <li>Outliers</li>
+                            <li>Hierarchical Algorithms</li>
+                            <li>Partitional Algorithms</li>
+                        </ul>
+                    </div>
+
+                    <div class="chapter">
+                        <h3>Chapter 5: Association Rule</h3>
+                        <ul>
+                            <li>Introduction</li>
+                            <li>Large Item Sets</li>
+                            <li>Basic Algorithms</li>
+                            <li>Parallel & Distributed</li>
+                        </ul>
+                    </div>
+
+                    <div class="extras">
+                        <p><strong>Each chapter includes Practice Sets for hands-on learning</strong></p>
+                        <p>✓ Conclusion</p>
+                        <p>✓ Important Terms and Abbreviations</p>
+                        <p>✓ Foreword & Preface</p>
+                    </div>
+                </div>
+
+                <!-- Full Details Tab -->
+                <div class="tab-panel" role="tabpanel" id="details" aria-labelledby="tab-details" aria-hidden="true">
+                    <h2>Complete Book Details</h2>
+
+                    <div class="publication-info">
+                        <h3>Publication Information</h3>
+                        <table class="info-table">
+                            <tr>
+                                <td>Publisher</td>
+                                <td>Scientific Research Publication</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN</td>
+                                <td>979-8-20-839577-6  </td>
+                            </tr>
+                            <tr>
+                                <td>Edition</td>
+                                <td>2025</td>
+                            </tr>
+                            <tr>
+                                <td>Language</td>
+                                <td>English</td>
+                            </tr>
+                            <tr>
+                                <td>Pages</td>
+                                <td>194</td>
+                            </tr>
+                            <tr>
+                                <td>Format</td>
+                                <td>Paperback</td>
+                            </tr>
+                            <tr>
+                                <td>Price</td>
+                                <td><strong>₹599</strong> (25% off from ₹799)</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="offices">
+                        <h3>Office</h3>
+                        <p>Singapore</p>
+                    </div>
+
+
+
+                    <div class="copyright">
+                        <h3>Copyright Notice</h3>
+                        <p>Copyright © Mrs.K.S.Hemalatha /Mrs.D.Gopika/ Mrs.K.Nithyadevi/Mrs.P.Lakshmi Priya</p>
+                        <p>All Rights Reserved. This book has been published with all reasonable care to make the
+                            material error-free after the consent of the authors. No part of this book shall be used,
+                            reproduced in any manner whatsoever without written permission from the authors.</p>
+                    </div>
+
+                    <div class="dedication">
+                        <h3>Dedication</h3>
+                        <p><em>"To the divine, my family, and my mentors for their unwavering support and
+                                inspiration."</em></p>
+                    </div>
+
+                    <div class="key-terms">
+                        <h3>Important Data Terms Covered</h3>
+                        <div class="terms-grid">
+                            <span>Data Mining</span>
+                            <span>KDD</span>
+                            <span>ETL</span>
+                            <span>OLAP</span>
+                            <span>DT</span>
+                            <span>NN</span>
+                            <span>GA</span>
+                            <span>SVM</span>
+                            <span>PCA</span>
+                            <span>KNN</span>
+                            <span>Rule-Based Classifier</span>
+                            <span>bottom-up</span>
+                            <span>top-down</span>
+                            <span>DBSCAN</span>
+                            <span>Association Rule</span>
+                            <span>Apriori Algorithm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Contact Us Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="contact-title">Contact Us</h2>
+            <div class="contact-grid">
+                <!-- Left Column: Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:scientificresearch2008@gmail.com"
+                                class="contact-link">scientificresearch2008@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <a href="tel:+918754632888" class="contact-link">+91 8754632888</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p class="contact-text">Singapore</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Map -->
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255281.30296166125!2d103.70416557452132!3d1.3143393775874864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da11238a8b9375%3A0x887869cf52abf5c4!2sSingapore!5e0!3m2!1sen!2sin!4v1732980000000!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0; border-radius: 12px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Scientific Research Publications. All rights reserved.</p>
+    </footer>
+
+    <!-- Screen-reader live region for accessibility notifications -->
+    <div id="liveRegion" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- PDF.js for mobile-friendly inline PDF viewing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    </script>
+
+    <script src="book-page.js"></script>
+</body>
+
+</html>
