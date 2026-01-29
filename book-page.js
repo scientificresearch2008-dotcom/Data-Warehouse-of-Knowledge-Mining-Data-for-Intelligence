@@ -689,7 +689,8 @@ function createMobileCTA() {
     cta.className = 'mobile-cta';
     cta.innerHTML = `
         <div class="cta-left">
-            <div style="font-weight:700;font-size:0.95rem;color:var(--white);">Relational Data Architecture</div>
+            <div style="font-weight:700;font-size:0.95rem;color:var(--white);">Data Warehouse of Knowledge: 
+Mining Data for Intelligence</div>
             <div style="font-size:0.9rem;color:rgba(255,255,255,0.9);">₹599</div>
         </div>
         <div class="cta-actions">
